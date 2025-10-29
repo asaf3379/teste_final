@@ -20,6 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Schema::defaultStringLength(191); //coloca como padrao todos arquivos de migração- feito pra poder rodar "php artisan migrate"= mexer no ddl pelo php
+        Schema::defaultStringLength(191);
     }
 }
