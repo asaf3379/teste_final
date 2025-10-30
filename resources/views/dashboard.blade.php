@@ -9,12 +9,12 @@
 <body>
  
     <main>
-      <h1 class="text-center navbar-dark bg-primary">Sabor do Brasil</h1>
+    <h1 class="text-center bg-warning" style="color: white;">SABOR DO BRASIL</h1>
       <div class="container">
         <div class="row">
           <div class="col">
               <img class="rounded mx-auto d-block" src="{{ asset($usuario->foto) }}" alt="Foto do usuário" style="width: 150px; height: 150px; object-fit: cover;">
-            <h5 class="text-center border-bottom border-dark">{{ $usuario->nome }}</h5>
+            <h5 class="text-center border-bottom border-">{{ $usuario->nome }}</h5>
           <div class="container">
            <div class="row">
             <div class="col">
@@ -29,11 +29,11 @@
            </div>
           </div>
 
-          <div class="col-6 border-left border-right border-dark">
+          <div class="col-6 border-left border-right border-warning">
             <h5 class="text-center mb-4">Publicações</h5>
             <div class="d-flex flex-column align-items-center">
           @foreach($publicacoes as $publicacao)
-<div class="border border-dark p-3 mb-4 w-75 text-center rounded">
+<div class="border border-warning p-3 mb-4 w-75 text-center rounded">
     <h6>{{$publicacao->titulo_prato}}</h6>
     <img src="{{asset($publicacao->foto)}}" alt="{{$publicacao->titulo_prato}}" class="img-fluid mb-2" style="max-height: 200px; object-fit: cover;">
     <div class="row">
@@ -160,14 +160,14 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <p class="text-center">Sabor do Brasil</p>
+            <p class="text-center">SABOR DO BRASIL</p>
           </div>
           <div class="col-6">
             <nav class="nav row">
-              <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Instagram.svg') }}" alt="Insta"></a>
-              <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Whatsapp.svg') }}" alt="Whatss"></a>
+              <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Instagram.svg') }}" alt="Instagram"></a>
+              <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Whatsapp.svg') }}" alt="WhatsApp"></a>
               <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Twitter.svg') }}" alt="Twitter"></a>
-              <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Globe.svg') }}" alt="Goggle"></a>
+              <a class="nav-link text-center col" href=""><img src="{{ asset('imagens/Globe.svg') }}" alt="Google"></a>
             </nav>
           </div>
           <div class="col">

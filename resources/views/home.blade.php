@@ -42,12 +42,12 @@
     </div>
   </div>
 </div>
-      <h1 class="text-center bg-warning" style="color: white;">SABOR DO BRASIL</h1>
+      <h1 class="text-center bg-warning" style="color: white;" >SABOR DO BRASIL</h1>
       <div class="container">
   <div class="row">
    <div class="col">
     <img class="rounded mx-auto d-block" src="{{asset('imagens/logo.png')}}" alt="logo">
-    <h5 class="text-center border-bottom border-dark">Sabor do Brasil</h5>
+    <h5 class="text-center border-bottom border-dark">SABOR DO BRASIL</h5>
     <div class="container">
   <div class="row">
     <div class="col">
@@ -61,11 +61,11 @@
     </div>
    </div>
   </div>
-  <div class="col-6 border-left border-right border-dark">
+  <div class="col-6 border-left border-right border-warning">
 <h5 class="text-center mb-4">Publicações</h5>
 <div class="d-flex flex-column align-items-center">
   @foreach($publicacoes as $publicacao)
-<div class="border border-dark p-3 mb-4 w-75 text-center rounded">
+<div class="border border-warning p-3 mb-4 w-75 text-center rounded">
     <h6>{{$publicacao->titulo_prato}}</h6>
     <img src="{{asset($publicacao->foto)}}" alt="{{$publicacao->titulo_prato}}" class="img-fluid mb-2" style="max-height: 200px; object-fit: cover;">
     <div class="row">
